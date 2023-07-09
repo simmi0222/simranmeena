@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(195, 217, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+   position: relative;
+   width: 100%;
+   max-width: 1000px;
+   min-height: 1000px;
+   background-color: white;
+   margin: 50px;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+}
+
+.left-side {
+    position: relative;
+    background: #708aa6;
+    padding: 40px;
+}
+
+.profile-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(30, 20, 20);
+}
+
+.profile-text .img-box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-text .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 2s;
+}
+
+.profile-text .img-box:hover{
+    scale: 1.1;
+}
+
+.profile-text h2 {
+    color: white;
+    font-size: 1.5vmax;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: "gilroy";
+}
+
+.profile-text h2:hover{
+    color: #000000;
+    cursor: pointer;
+}
+
+.contact-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    border-bottom: 2px solid rgb(7, 4, 4);
+}
+
+.title {
+    color: rgb(43, 29, 29);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5vmax;
+    line-height: 2vmax;
+    letter-spacing: 1.5px;
+    margin-bottom: 1vmax;
+    font-family: "gilroy";
+    text-align: center;
+}
+
+.title:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-info ul {
+    position: relative;
+
+}
+
+.contact-info ul li {
+    position: relative;
+    list-style: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.contact-info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    padding-top: .5vmax;
+    font-weight: 900;
+}
+
+.contact-info ul li span  {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-family: "gilroy";   
+}
+
+.contact-info ul li span  #text-3 a{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-family: "gilroy";   
+}
+
+.Education {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    /* border-bottom: 2px solid rgb(35, 27, 27); */
+    border-bottom: 3px solid rgb(30, 20, 20);
+    
+}
+.Education ul li {
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: 15px;
+
+}
+
+.Education .title2 {
+    color:rgb(62, 60, 60);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: "gilroy";
+    font-size: 2vmax;
+    padding-bottom: 15px;
+}
+
+.Education .title2:hover{
+    color: #000000;
+    cursor: pointer;
+    text-shadow: 2px 2px #385e86;
+   
+}
+
+
+
+.Educaton li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+/* .Education h5 {
+    color: rgb(60, 1, 1);
+    font-weight: 600;
+    font-size: 1vmax;
+    margin-bottom: 5px;
+    font-family: "gilroy";
+
+} */
+
+.Education h2 {
+    color: rgb(33, 95, 137);
+    font-weight: 600;
+    font-size: 1.5vmax;
+    margin-bottom: 5px;
+font-family: "gilroy";
+padding-top: 5px;
+padding-bottom: 10px;
+}
+
+
+.Education h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 1.4vmax;
+    margin-bottom: 5px;
+    font-family: "gilroy";
+}
+
+
+/* .Education h4 {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1vmax;
+    margin-bottom: 5px;
+} */
+
+.language {
+    margin-top: 20px;
+}
+
+.language .text{
+    font-size: 1.4vmax;
+    font-family: "gilroy";
+    font-weight: 600;
+}
+.language.language ul li{
+    list-style: none;
+    line-height: 30px;
+    color: white;
+}
+.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: gray;
+    display: block;
+
+}
+
+.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+}
+
+.right-side {
+    position: relative;
+    background: #d6dde1;
+    padding: 40px;
+}
+
+.about {
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgb(30, 20, 20);
+    margin-bottom: 20px;
+}
+
+.about:last-child {
+    margin-bottom: 50px;
+}
+
+.title2 {
+    color: rgb(62, 60, 60);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: "gilroy";
+    padding-bottom: 15px;
+    font-size: 2vmax;
+}
+
+.title2:hover{
+    cursor: pointer;
+    color: #000000;
+    text-shadow: 2px 2px #385e86;
+}
+
+p {
+    color: #000000;
+    font-size: 1.5vmax;
+    font-family: "gilroy";
+}
+
+.about-skills{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(30, 20, 20);
+}
+
+.about-skills ul li {
+    font-size: 1.5vmax;
+    padding-top: 5px;
+    font-family: "gilroy";
+    font-weight: 500;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.about-skills ul li:hover{
+    color: rgb(0, 59, 101);
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.about-certificates {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.about-certificates ul li {
+    font-size: 1.5vmax;
+    padding-top: 5px;
+    font-family: "gilroy";
+    color: white;
+   
+}
+
+.about-certificates ul li:hover{
+    color: rgb(0, 59, 101);
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.about-projects .title2 {
+    margin-top: 20px;
+
+}
+
+/* .about-projects  {
+    font-size: 1.5vmax;
+    font-weight: 600;
+    font-family: "gilroy";
+} */
+.about-projects p{
+    font-size: 1.7vmax;
+    font-family: "gilroy";
+    padding-top: 5px;
+}
+
+
+
+.about-projects a {
+   /* text-decoration: underline; */
+    color: #385e86;
+    font-size: 1.5vmax;
+    padding-top: 5px;
+    font-family: "gilroy";
+    font-weight: bolder;
+   
+}
+
+.about-projects a:hover {
+    color: rgb(0, 59, 101);
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.about-projects h3{
+    padding-top: 10px;
+    font-size: 1.4vmax;
+    font-family: "gilroy";
+}
+
+
+
+
+
+.about-interest {
+    margin-top: 50px;
+}
+
+.about-interest ul li {
+    font-size: 1.5vmax;
+    padding-top: 5px;
+   
+}
+
+.about-interest ul li:hover{
+    color: rgb(0, 59, 101);
+    cursor: pointer;
+    font-weight: 900;
+}
+
+@media (max-width: 1000px)
+{ .container {
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+}
+
+ .interest {
+    grid-template-columns: repeat(2,1fr);
+ }
+}
+
+
+
+
+
